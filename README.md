@@ -7,6 +7,9 @@
 # 2. Fitur Registrasi
 <img src = "assets/registrasi.jpg">
 
+# 3. Fitur Tambah Data
+<img src = "assets/tambah data.jpg">
+
 This project is a starting point for a Flutter application.
 
 A few resources to get you started if this is your first Flutter project:

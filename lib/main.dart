@@ -4,7 +4,6 @@ import '../screen/first_page.dart';
 import '../screen/home.dart';
 import '../screen/login.dart';
 import '../screen/registrasi.dart';
-import '../api/category.dart';
 
 void main() {
   runApp(const MyApp());
@@ -25,7 +24,7 @@ class MyApp extends StatelessWidget {
       },
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.red,
+        // primarySwatch: Color.fromARGB(255, 255, 205, 202),
       ),
       debugShowCheckedModeBanner: false,
     );

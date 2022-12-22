@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_mobileuas/api/http.dart';
-import 'package:flutter_mobileuas/components/category_model.dart';
+import '../api/http.dart';
+import '../components/category_model.dart';
 
 import 'home.dart';
 

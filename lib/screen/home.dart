@@ -4,7 +4,6 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import '../components/category_model.dart';
 import '../screen/edit_category.dart';
-import '../components/category_model.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../api/http.dart';
@@ -75,12 +74,12 @@ class _Home extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 28, 46, 183),
+      backgroundColor: Color.fromARGB(255, 143, 154, 242),
       body: Column(
         children: [
           Container(
             decoration: BoxDecoration(
-              color: Color.fromARGB(255, 28, 46, 183),
+              color: Color.fromARGB(255, 176, 185, 248),
             ),
             height: 180,
             child: Column(
@@ -97,13 +96,13 @@ class _Home extends State<Home> {
                     child: Text(
                       'Welcome $name',
                       style: TextStyle(
-                        color: Color.fromARGB(255, 122, 0, 253),
+                        color: Color.fromARGB(255, 0, 0, 0),
                         fontWeight: FontWeight.w800,
                         fontSize: 25,
                         fontFamily: 'Raleway',
                         shadows: [
                           Shadow(
-                            color: Color.fromARGB(255, 28, 46, 183),
+                            color: Color.fromARGB(255, 135, 147, 233),
                             blurRadius: 6,
                             offset: const Offset(4.0, 4.0),
                           ),
@@ -162,19 +161,19 @@ class _Home extends State<Home> {
             child: TextFormField(
               controller: etCategory,
               decoration: InputDecoration(
-                hintText: "Input Your Categories Name",
+                hintText: "Masukkan Kategori",
                 hintStyle: const TextStyle(fontFamily: 'Raleway'),
                 filled: true,
-                fillColor: Color.fromARGB(255, 247, 126, 126),
+                fillColor: Color.fromARGB(255, 255, 255, 255),
                 focusedBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(20.0),
                   borderSide: const BorderSide(
-                    color: Color.fromARGB(255, 169, 0, 0),
+                    color: Color.fromARGB(255, 255, 208, 208),
                   ),
                 ),
                 enabledBorder: OutlineInputBorder(
                   borderSide: const BorderSide(
-                    color: Color.fromARGB(255, 250, 127, 127),
+                    color: Color.fromARGB(255, 233, 165, 165),
                   ),
                   borderRadius: BorderRadius.circular(20.0),
                 ),
@@ -199,7 +198,7 @@ class _Home extends State<Home> {
           Expanded(
             child: Container(
               decoration: BoxDecoration(
-                color: Color.fromARGB(255, 255, 58, 58),
+                color: Color.fromARGB(255, 250, 250, 250),
                 borderRadius: const BorderRadius.only(
                   topRight: Radius.circular(10.0),
                   topLeft: Radius.circular(10.0),
@@ -212,21 +211,21 @@ class _Home extends State<Home> {
                   return Dismissible(
                     key: UniqueKey(),
                     background: Container(
-                      color: Color.fromARGB(255, 238, 52, 52),
+                      color: Color.fromARGB(255, 126, 126, 126),
                       child: Padding(
                         padding: const EdgeInsets.all(15),
                         child: Row(
                           children: const [
                             Icon(
                               Icons.create_rounded,
-                              color: Color.fromARGB(255, 226, 113, 113),
+                              color: Color.fromARGB(255, 255, 255, 255),
                             ),
                           ],
                         ),
                       ),
                     ),
                     secondaryBackground: Container(
-                      color: Color.fromARGB(255, 82, 91, 255),
+                      color: Color.fromARGB(255, 166, 169, 225),
                       child: Padding(
                         padding: const EdgeInsets.all(15),
                         child: Row(

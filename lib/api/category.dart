@@ -9,8 +9,8 @@ class CategoryService {
   String baseUrl = 'http://192.168.52.57:8000/api/';
   String token = '';
 
-  static Future<List<dynamic>> getCategories(String page) async {
-    final String _baseUrl = 'http://192.168.52.57:8000/api/';
+   static Future<List<dynamic>> getCategories(String page) async {
+    final String _baseUrl = 'http://localhost:8000/api/';
     var url = Uri.parse(_baseUrl + 'category?page=$page');
 
     List<Category> categories = [];
